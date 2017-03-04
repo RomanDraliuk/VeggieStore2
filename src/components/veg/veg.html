@@ -1,0 +1,16 @@
+
+
+<div class="wrapper" [ngStyle]="{'color':veg.color}" (click)="selectVeg()">
+   <img  *ngIf="veg.imgUrl" [src]="'assets/image/' + veg.imgUrl">
+  <div class="name">
+    {{veg.name}}
+  </div>
+  <div class="price">
+    {{veg.price}} &#8362;
+  </div>
+
+</div>
+
+
+
+

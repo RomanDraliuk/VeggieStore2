@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>VeggieList</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h2>
+    Veggies
+  </h2>
+
+  <div *ngFor="let v of veggies">
+
+    <veg [veg]="v"></veg>
+
+      <button ion-fab mini (click)=" addVeg(v) ">
+        <ion-icon name="add"></ion-icon>
+      </button>
+
+  </div>

@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Veggie Details Page</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-slides pager>
+  <ion-slide >
+    <img [src]="'assets/image/'+ veg.imgUrl">
+    <h2>{{veg.name}}</h2>
+    <p class="cucmberP">
+      {{veg.text}}
+    </p>
+  </ion-slide>
+
+  </ion-slides>
+
+</ion-content>
